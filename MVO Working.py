@@ -248,7 +248,7 @@ class MVOApp:
         self.all_cap_button = tk.Button(self.buttons_frame, text="All Cap at 10%", command=self.all_cap_10)
         self.all_cap_button.pack(side=tk.LEFT, padx=2)
         
-        self.all_cap_button = tk.Button(self.buttons_frame, text="All Cap at 10%", command=self.all_cap_17.5)
+        self.all_cap_button = tk.Button(self.buttons_frame, text="All Cap at 18%", command=self.all_cap_18)
         self.all_cap_button.pack(side=tk.LEFT, padx=2)
         
         self.all_cap_button = tk.Button(self.buttons_frame, text="All Cap at 20%", command=self.all_cap_20)
@@ -471,10 +471,10 @@ class MVOApp:
             entry.delete(0, tk.END)
             entry.insert(0, '10')
 
-    def all_cap_17.5(self):
+    def all_cap_18(self):
         for entry in self.entries.values():
             entry.delete(0, tk.END)
-            entry.insert(0, '17.5')
+            entry.insert(0, '18')
             
     def all_cap_20(self):
         for entry in self.entries.values():
